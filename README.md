@@ -107,13 +107,15 @@ PROJECT_ID            #Plane → Project Settings → General
 NOTIFY_CHANNEL_ID     #channel ID
 ```
 
-4. Deploy slash commands
+4. Change the webhook in PLANE as public URL   #https://your-server-domain.com/plane-webhook
+
+5. Deploy slash commands
 
 ```bash
 npm run deploy
 ```
 
-5. Start the bot
+6. Start the bot
 
 ```bash
 npm start
