@@ -76,3 +76,11 @@ client.login(config.DISCORD_TOKEN).catch(error => {
   logger.error("Failed to login to Discord", error);
   process.exit(1);
 });
+
+const { startWebhookServer } = require("./webhook");
+
+client.once("ready", () => {
+  console.log("Bot ready");
+  startWebhookServer(client);
+});
+

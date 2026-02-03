@@ -99,11 +99,12 @@ npm install
    Create a `.env` file in the root directory with the following variables:
 
 ```env
-DISCORD_TOKEN=your_discord_bot_token
-PLANE_API_KEY=your_plane_api_key        # Generate from Plane settings
-WORKSPACE_SLUG=your_workspace_slug      # Found in Plane workspace URL
-PROJECT_ID=your_project_id             # Found in Plane project settings
-CLIENT_ID=your_discord_client_id
+DISCORD_TOKEN         #Discord Developer Portal → Bot → Token
+CLIENT_ID             #Discord Developer Portal → OAuth2 → General
+PLANE_API_KEY         #Plane → User Settings → API Tokens
+WORKSPACE_SLUG        #https://sw-plane.bytesdiscovery.com/<THIS-PART>/projects
+PROJECT_ID            #Plane → Project Settings → General
+NOTIFY_CHANNEL_ID     #channel ID
 ```
 
 4. Deploy slash commands
